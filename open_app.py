@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from pywinauto.application import Application
+import os
 
+os.environ.update({"__COMPAT_LAYER":"RUnAsInvoker"})
 app = Application(backend='win32')
 
 def openapp(app_path):
@@ -13,6 +15,6 @@ def close_app():
     # 关闭应用
     app.kill()
 
-
-# openapp('notepad.exe')
+# a= r'D:\installfile\公路算量\BimHighway\MCTech.CQ.Acad.Launcher.exe'
+# openapp(a)
 # close_app()

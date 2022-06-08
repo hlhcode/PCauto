@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import open_app
+from open_app import openapp
 from login_app import login_app
 
 
 def test_case(app_path, class_name, title):
-    open_app(app_path)
+    openapp(app_path)
     login_app(class_name, title)
 
 
