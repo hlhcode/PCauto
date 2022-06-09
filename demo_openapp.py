@@ -83,11 +83,11 @@ dlg = app["梦诚BIM公路算量"]
 
 # 方式二
 edit = dlg["Edit4"]
-print(edit.print_control_identifiers())
+# print(edit.print_control_identifiers())
 
 # 方式三
 exep = edit.child_window(title="打开", control_type="Button")
-exep.print_control_identifiers()
+# exep.print_control_identifiers()
 
 
 # 六、控件的分类
@@ -116,10 +116,27 @@ exep.print_control_identifiers()
 
 # 七、窗口控件基本属性获取方法    https://www.bilibili.com/video/BV1nR4y137sV?p=11&spm_id_from=pageDriver
 # 1、获取控件类型：wrapper_object()
+print(dlg.wrapper_object())
+print(edit.wrapper_object())
+print(exep.wrapper_object())
+
 # 2、获取该控件支持的方法：print(dir(a.wrapper_object()))
+print(dir(dlg.wrapper_object()))
+
+# 控件的文本内容获取：texts
+print(dlg.texts())
+
 # 3、获取控件的子元素：children
+print(dlg.children())
+print(edit.children())
+print(exep.children())
+
 # 4、获取控件类名：class_name
+print(dlg.class_name)
+
 # 5、以字典形式返回控件的属性：get_properties
+print(dlg.get_properties)
+
 
 # # 定位到窗口（class_name:窗口类名，title：窗口标题）
 # dlg = app.window(class_name='WindowsForms10.Window.8.app.0.3ddfb6e_r6_ad1',title="梦诚BIM公路算量")
