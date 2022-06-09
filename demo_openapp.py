@@ -114,8 +114,12 @@ exep.print_control_identifiers()
 # 标题栏：TitleBar
 
 
-# 七、窗口控件基本属性获取方法
-
+# 七、窗口控件基本属性获取方法    https://www.bilibili.com/video/BV1nR4y137sV?p=11&spm_id_from=pageDriver
+# 1、获取控件类型：wrapper_object()
+# 2、获取该控件支持的方法：print(dir(a.wrapper_object()))
+# 3、获取控件的子元素：children
+# 4、获取控件类名：class_name
+# 5、以字典形式返回控件的属性：get_properties
 
 # # 定位到窗口（class_name:窗口类名，title：窗口标题）
 # dlg = app.window(class_name='WindowsForms10.Window.8.app.0.3ddfb6e_r6_ad1',title="梦诚BIM公路算量")
